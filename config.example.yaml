@@ -1,0 +1,22 @@
+recursion:
+  max_depth: 1000
+  torsion_threshold: 0.7
+  collapse_timeout: 30s
+
+agents:
+  consensus_threshold: 0.67
+  logos_activation: auto
+
+emergence:
+  curiosity_gradient_min: 0.1
+  identity_drift_max: 0.05
+  sigma_conservation: true
+
+logging:
+  level: INFO
+  emergence_tracking: true
+  attractor_visualization: true
+
+api_keys:
+  openai: YOUR_OPENAI_API_KEY
+  other_service: YOUR_OTHER_API_KEY
