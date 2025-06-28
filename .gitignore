@@ -1,8 +1,77 @@
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
 *.so
-.env/
+*.pkl
+*.pickle
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+*.out
+*.egg-info/
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# Virtual environments
+aci_env/
 venv/
+.env/
+.envrc
+
+# PyTorch/ML
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.mlmodel
+
+# Data, runtime, and output
+memory/
+logs/
+*.log
+*.json
+*.trace
+*.dat
+*.csv
+*.tsv
+*.sqlite
+*.db
+*.cache/
+*.tensorboard/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Ignore agent state and temp
+*.state
+*.tmp
+*.run
+*.pid
+
+# Ignore compiled docs
+/build/
+dist/
+docs/_build/
+
+# Ignore test outputs
+/test-output/
+
+# Ignore user secrets
+secrets.*
+
+# Ignore anything else noisy
+*.bak
+*.backup
+
+# Project-specific
 config.yaml

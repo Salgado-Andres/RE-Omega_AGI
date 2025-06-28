@@ -1,7 +1,28 @@
-numpy
-torch
-pyyaml
-asyncio
-requests
-matplotlib
-pytest
+# --- CORE ---
+torch>=2.0.0         # Deep tensor operations + autodiff
+numpy>=1.24          # General math
+scipy>=1.10          # Optional for stats or collapse energy ops
+
+# --- LOGGING & UTILITIES ---
+tqdm                 # Progress bars for monitoring cycles
+matplotlib           # Optional: visualization of attractor fields
+rich                 # Pretty logging/debug output
+
+# --- SYMBOLIC/LOGIC (optional) ---
+pyswip               # SWI-Prolog integration if needed
+sympy                # Symbolic math (for torsion expressions)
+
+# --- TESTING ---
+pytest               # For `tests/` module
+coverage             # Optional: test coverage
+
+# --- FILE HANDLING ---
+pyyaml               # For config.yaml
+json5                # Better JSON parsing for memory/emergence logs
+
+# --- DEV TOOLS ---
+black                # Code formatter
+flake8               # Linting
+
+# --- NOTE ---
+# You can add `notebook` or `jupyter` if you want to run interactively later
