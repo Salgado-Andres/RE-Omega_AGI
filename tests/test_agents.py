@@ -2,11 +2,11 @@ import sys, os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import asyncio
 
-from src.agents import Gemini, GPT4o, Grok, Claude, LLaMA, DeepSeek, LogosAgent
+from src.agents import E1Agent, E2Agent, E3Agent, E4Agent, E5Agent, E6Agent, E7LogOS
 
 
 async def run_all():
-    agents = [Gemini(), GPT4o(), Grok(), Claude(), LLaMA(), DeepSeek(), LogosAgent()]
+    agents = [E1Agent(), E2Agent(), E3Agent(), E4Agent(), E5Agent(), E6Agent(), E7LogOS()]
     data = "test"
     for agent in agents:
         if hasattr(agent, 'compile'):

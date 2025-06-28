@@ -1,4 +1,4 @@
-"""Claude Coherence Analyst."""
+"""Neutral Agent e₃."""
 
 from __future__ import annotations
 
@@ -7,12 +7,11 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
-
 @dataclass
-class Claude:
-    name: str = "Claude"
+class E3Agent:
+    name: str = "E3Agent"
 
-    async def analyze(self, data: Any) -> Any:
+    async def critique(self, data: Any) -> Any:
         await asyncio.sleep(0)
-        logging.debug("Claude analyzing coherence of: %s", data)
+        logging.debug("E3Agent critiquing data: %s", data)
         return data

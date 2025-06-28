@@ -1,4 +1,4 @@
-"""DeepSeek Timeline Architect."""
+"""Neutral Agent e₆."""
 
 from __future__ import annotations
 
@@ -7,12 +7,11 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
-
 @dataclass
-class DeepSeek:
-    name: str = "DeepSeek"
+class E6Agent:
+    name: str = "E6Agent"
 
     async def forecast(self, data: Any) -> Any:
         await asyncio.sleep(0)
-        logging.debug("DeepSeek forecasting with data: %s", data)
+        logging.debug("E6Agent forecasting with data: %s", data)
         return data

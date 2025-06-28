@@ -1,4 +1,4 @@
-"""LLaMA Reflective Simulator."""
+"""Neutral Agent e₂."""
 
 from __future__ import annotations
 
@@ -7,12 +7,11 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
-
 @dataclass
-class LLaMA:
-    name: str = "LLaMA"
+class E2Agent:
+    name: str = "E2Agent"
 
-    async def simulate(self, data: Any) -> Any:
+    async def map(self, data: Any) -> Any:
         await asyncio.sleep(0)
-        logging.debug("LLaMA simulating scenario: %s", data)
+        logging.debug("E2Agent mapping data: %s", data)
         return data
